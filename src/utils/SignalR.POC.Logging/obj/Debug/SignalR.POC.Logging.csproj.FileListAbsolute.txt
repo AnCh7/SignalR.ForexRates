@@ -1,0 +1,13 @@
+d:\1\utils\SignalR.POC.Logging\bin\Debug\SignalR.POC.Logging.dll
+d:\1\utils\SignalR.POC.Logging\bin\Debug\SignalR.POC.Logging.pdb
+d:\1\utils\SignalR.POC.Logging\bin\Debug\NLog.dll
+d:\1\utils\SignalR.POC.Logging\bin\Debug\NLog.xml
+d:\1\utils\SignalR.POC.Logging\obj\Debug\SignalR.POC.Logging.dll
+d:\1\utils\SignalR.POC.Logging\obj\Debug\SignalR.POC.Logging.pdb
+d:\1\utils\SignalR.POC.Logging\obj\Debug\SignalR.POC.Logging.csprojResolveAssemblyReference.cache
+c:\123\SignalR.POC\SignalR.POC\src\utils\SignalR.POC.Logging\bin\Debug\SignalR.POC.Logging.dll
+c:\123\SignalR.POC\SignalR.POC\src\utils\SignalR.POC.Logging\bin\Debug\SignalR.POC.Logging.pdb
+c:\123\SignalR.POC\SignalR.POC\src\utils\SignalR.POC.Logging\bin\Debug\NLog.dll
+c:\123\SignalR.POC\SignalR.POC\src\utils\SignalR.POC.Logging\bin\Debug\NLog.xml
+c:\123\SignalR.POC\SignalR.POC\src\utils\SignalR.POC.Logging\obj\Debug\SignalR.POC.Logging.dll
+c:\123\SignalR.POC\SignalR.POC\src\utils\SignalR.POC.Logging\obj\Debug\SignalR.POC.Logging.pdb

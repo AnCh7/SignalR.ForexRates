@@ -1,0 +1,39 @@
+﻿body {
+	font-family: 'Segoe UI', Arial, Helvetica, sans-serif;
+	font-size: 16px;
+}
+
+#MarketTable table { border-collapse: collapse; }
+
+#MarketTable table th, #MarketTable table td { padding: 2px 6px; }
+
+#MarketTable table td { text-align: right; }
+
+#MarketTable .loading td { text-align: left; }
+
+#MarketTicker {
+	border: 1px solid #999;
+	height: 24px;
+	overflow: hidden;
+	width: 450px;
+}
+
+#MarketTicker .inner { width: 9999px; }
+
+#MarketTicker ul {
+	display: inline-block;
+	list-style-type: none;
+	margin: 0;
+	padding: 0;
+}
+
+#MarketTicker li {
+	display: inline-block;
+	margin-right: 8px;
+}
+
+	/*<li data-symbol="{Symbol}"><span class="symbol">{Symbol}</span><span class="price">{Price}</span><span class="change">{PercentChange}</span></li>*/
+
+#MarketTicker .pair { font-weight: bold; }
+
+#MarketTicker .change { font-style: italic; }

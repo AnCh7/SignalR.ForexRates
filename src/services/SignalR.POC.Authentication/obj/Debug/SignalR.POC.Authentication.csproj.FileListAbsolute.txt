@@ -1,0 +1,9 @@
+d:\1\services\SignalR.POC.Authentication\bin\Debug\SignalR.POC.Authentication.dll
+d:\1\services\SignalR.POC.Authentication\bin\Debug\SignalR.POC.Authentication.pdb
+d:\1\services\SignalR.POC.Authentication\obj\Debug\SignalR.POC.Authentication.dll
+d:\1\services\SignalR.POC.Authentication\obj\Debug\SignalR.POC.Authentication.pdb
+d:\1\services\SignalR.POC.Authentication\obj\Debug\SignalR.POC.Authentication.csprojResolveAssemblyReference.cache
+c:\123\SignalR.POC\SignalR.POC\src\services\SignalR.POC.Authentication\bin\Debug\SignalR.POC.Authentication.dll
+c:\123\SignalR.POC\SignalR.POC\src\services\SignalR.POC.Authentication\bin\Debug\SignalR.POC.Authentication.pdb
+c:\123\SignalR.POC\SignalR.POC\src\services\SignalR.POC.Authentication\obj\Debug\SignalR.POC.Authentication.dll
+c:\123\SignalR.POC\SignalR.POC\src\services\SignalR.POC.Authentication\obj\Debug\SignalR.POC.Authentication.pdb

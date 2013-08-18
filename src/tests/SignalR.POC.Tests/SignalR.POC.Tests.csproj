@@ -1,0 +1,87 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="4.0" DefaultTargets="Build" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <Import Project="$(MSBuildExtensionsPath)\$(MSBuildToolsVersion)\Microsoft.Common.props" Condition="Exists('$(MSBuildExtensionsPath)\$(MSBuildToolsVersion)\Microsoft.Common.props')" />
+  <PropertyGroup>
+    <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
+    <Platform Condition=" '$(Platform)' == '' ">AnyCPU</Platform>
+    <ProjectGuid>{544C7064-E962-49F8-B7C0-44406A1A0F58}</ProjectGuid>
+    <OutputType>Library</OutputType>
+    <AppDesignerFolder>Properties</AppDesignerFolder>
+    <RootNamespace>SignalR.POC.Tests</RootNamespace>
+    <AssemblyName>SignalR.POC.Tests</AssemblyName>
+    <TargetFrameworkVersion>v4.5</TargetFrameworkVersion>
+    <FileAlignment>512</FileAlignment>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Debug|AnyCPU' ">
+    <DebugSymbols>true</DebugSymbols>
+    <DebugType>full</DebugType>
+    <Optimize>false</Optimize>
+    <OutputPath>bin\Debug\</OutputPath>
+    <DefineConstants>DEBUG;TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Release|AnyCPU' ">
+    <DebugType>pdbonly</DebugType>
+    <Optimize>true</Optimize>
+    <OutputPath>bin\Release\</OutputPath>
+    <DefineConstants>TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+  </PropertyGroup>
+  <ItemGroup>
+    <Reference Include="nunit.framework, Version=2.6.2.12296, Culture=neutral, PublicKeyToken=96d09a1eb7f44a77, processorArchitecture=MSIL">
+      <SpecificVersion>False</SpecificVersion>
+      <HintPath>..\..\packages\NUnit.2.6.2\lib\nunit.framework.dll</HintPath>
+    </Reference>
+    <Reference Include="Rhino.Mocks">
+      <HintPath>..\..\packages\RhinoMocks.3.6.1\lib\net\Rhino.Mocks.dll</HintPath>
+    </Reference>
+    <Reference Include="System" />
+    <Reference Include="System.Core" />
+  </ItemGroup>
+  <ItemGroup>
+    <Compile Include="ServicesTests.cs" />
+    <Compile Include="Properties\AssemblyInfo.cs" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="App.config">
+      <SubType>Designer</SubType>
+    </None>
+    <None Include="packages.config" />
+  </ItemGroup>
+  <ItemGroup>
+    <ProjectReference Include="..\..\services\SignalR.POC.RatesGainCapital\SignalR.POC.RatesGainCapital.csproj">
+      <Project>{3FECD897-00F5-4AC7-B167-2EC6B3F686B6}</Project>
+      <Name>SignalR.POC.RatesGainCapital</Name>
+    </ProjectReference>
+    <ProjectReference Include="..\..\library\SignalR.POC.Library\SignalR.POC.Library.csproj">
+      <Project>{F2FC1A6E-BB9C-40DE-8FCB-967E2E45D4FB}</Project>
+      <Name>SignalR.POC.Library</Name>
+    </ProjectReference>
+    <ProjectReference Include="..\..\utils\SignalR.POC.Logging\SignalR.POC.Logging.csproj">
+      <Project>{66463021-0B12-46D3-A63D-73DC18B64B71}</Project>
+      <Name>SignalR.POC.Logging</Name>
+    </ProjectReference>
+    <ProjectReference Include="..\..\services\SignalR.POC.RatesFXCM\SignalR.POC.RatesFXCM.csproj">
+      <Project>{DF4990F5-2695-430F-A2E2-F1A084C2136A}</Project>
+      <Name>SignalR.POC.RatesFXCM</Name>
+    </ProjectReference>
+    <ProjectReference Include="..\..\services\SignalR.POC.RatesSpread\SignalR.POC.RatesSpread.csproj">
+      <Project>{F7D659D0-E49F-4F5C-A76E-41D6564E9888}</Project>
+      <Name>SignalR.POC.RatesSpread</Name>
+    </ProjectReference>
+    <ProjectReference Include="..\..\services\SignalR.POC.RatesTrueFX\SignalR.POC.RatesTrueFX.csproj">
+      <Project>{059B77DB-E4BB-4371-A979-354FF167E39A}</Project>
+      <Name>SignalR.POC.RatesTrueFX</Name>
+    </ProjectReference>
+  </ItemGroup>
+  <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
+  <!-- To modify your build process, add your task inside one of the targets below and uncomment it. 
+       Other similar extension points exist, see Microsoft.Common.targets.
+  <Target Name="BeforeBuild">
+  </Target>
+  <Target Name="AfterBuild">
+  </Target>
+  -->
+</Project>

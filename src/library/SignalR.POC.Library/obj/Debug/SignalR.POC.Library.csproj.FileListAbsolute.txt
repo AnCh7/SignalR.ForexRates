@@ -1,0 +1,9 @@
+d:\1\library\SignalR.POC.Library\bin\Debug\SignalR.POC.Library.dll
+d:\1\library\SignalR.POC.Library\bin\Debug\SignalR.POC.Library.pdb
+d:\1\library\SignalR.POC.Library\obj\Debug\SignalR.POC.Library.dll
+d:\1\library\SignalR.POC.Library\obj\Debug\SignalR.POC.Library.pdb
+d:\1\library\SignalR.POC.Library\obj\Debug\SignalR.POC.Library.csprojResolveAssemblyReference.cache
+c:\123\SignalR.POC\SignalR.POC\src\library\SignalR.POC.Library\bin\Debug\SignalR.POC.Library.dll
+c:\123\SignalR.POC\SignalR.POC\src\library\SignalR.POC.Library\bin\Debug\SignalR.POC.Library.pdb
+c:\123\SignalR.POC\SignalR.POC\src\library\SignalR.POC.Library\obj\Debug\SignalR.POC.Library.dll
+c:\123\SignalR.POC\SignalR.POC\src\library\SignalR.POC.Library\obj\Debug\SignalR.POC.Library.pdb

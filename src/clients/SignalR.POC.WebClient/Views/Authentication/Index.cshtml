@@ -1,0 +1,38 @@
+﻿@model SignalR.POC.WebClient.Models.User
+@{
+	Layout = null;
+}
+
+<!DOCTYPE html>
+
+<html>
+	<head>
+		<meta name="viewport" content="width=device-width" />
+		<title>Index</title>
+	</head>
+	<body>
+		<div style="padding-top: 100px; text-align: center; width: 100%;">
+			@using (Html.BeginForm())
+			{
+				<div>
+					<div>
+						@Html.LabelFor(m => m.Login)
+					</div>
+					<div>
+						@Html.EditorFor(m => m.Login)
+					</div>
+					<div>
+						@Html.LabelFor(m => m.Password)
+					</div>
+					<div>
+						@Html.EditorFor(m => m.Password)
+					</div>
+				</div>
+				<p>
+					<input type="submit" value="Login" />
+				</p>
+			}
+			@Html.Partial("ValidationSummary", @ViewData.ModelState)
+		</div>
+	</body>
+</html>

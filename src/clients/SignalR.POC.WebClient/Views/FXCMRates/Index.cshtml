@@ -1,0 +1,58 @@
+﻿@using System.Configuration
+@model dynamic
+
+<!DOCTYPE html>
+<html xmlns="http://www.w3.org/1999/xhtml">
+	<head>
+		<link href="~/Content/ForexRates.css" rel="stylesheet" />
+		<script src="@ConfigurationManager.AppSettings["HubsUrl"]"> </script>
+		<script src="~/Scripts.SignalR/FXCMRates.js"> </script>
+		<script type="text/javascript"> var SignalRUrl = '@ConfigurationManager.AppSettings["SignalRUrl"]' </script>
+	</head>
+	<body>
+		<h3>FXCM Forex Rates</h3>
+		
+		<input type="button" id="open" value="Start Quoting" />
+		<input type="button" id="close" value="Stop Quoting" disabled="disabled" />
+
+		<input type="hidden" id="customerId" value="@Request.QueryString["CustomerId"]" />
+
+		<h4>Welcome customer # @Request.QueryString["CustomerId"]</h4>
+		<label id="status"></label>
+		<br/>
+		
+		<h4>Live Quotes Tape</h4>
+		<div id="MarketTicker">
+			<div class="inner">
+				<ul>
+					<li class="loading">Loading...</li>
+				</ul>
+			</div>
+		</div>
+
+		<h4>Live Quotes Table</h4>
+		<div id="MarketTable">
+			<table border="1">
+				<thead>
+					<tr>
+						<th>Pair
+						</th>
+						<th>Bid
+						</th>
+						<th>Ask
+						</th>
+						<th>Spread Bid
+						</th>
+						<th>Spread Ask
+						</th>
+					</tr>
+				</thead>
+				<tbody>
+					<tr class="loading">
+						<td colspan="5">Loading...</td>
+					</tr>
+				</tbody>
+			</table>
+		</div>
+	</body>
+</html>
